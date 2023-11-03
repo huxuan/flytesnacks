@@ -35,7 +35,9 @@ cookiecutter==2.1.1
 croniter==1.3.5
     # via flytekit
 cryptography==37.0.4
-    # via pyopenssl
+    # via
+    #   pyopenssl
+    #   secretstorage
 cycler==0.11.0
     # via matplotlib
 dataclasses-json==0.5.7
@@ -80,6 +82,10 @@ imagehash==4.2.1
     # via visions
 importlib-metadata==4.12.0
     # via flytekit
+jeepney==0.8.0
+    # via
+    #   keyring
+    #   secretstorage
 jinja2==3.1.2
     # via
     #   cookiecutter
@@ -143,6 +149,7 @@ numpy==1.23.2
     #   pandas-profiling
     #   phik
     #   pyarrow
+    #   pywavelets
     #   scikit-learn
     #   scipy
     #   seaborn
@@ -162,7 +169,7 @@ pandas-profiling==3.2.0
     # via flytekitplugins-deck-standard
 phik==0.12.2
     # via pandas-profiling
-pillow==9.2.0
+pillow==10.0.1
     # via
     #   imagehash
     #   matplotlib
@@ -246,6 +253,8 @@ seaborn==0.11.2
     # via
     #   missingno
     #   pandas-profiling
+secretstorage==3.3.3
+    # via keyring
 six==1.16.0
     # via
     #   grpcio
@@ -283,8 +292,10 @@ urllib3==1.26.11
     #   flytekit
     #   requests
     #   responses
-visions[type_image_path]==0.7.4
-    # via pandas-profiling
+visions[type-image-path]==0.7.4
+    # via
+    #   pandas-profiling
+    #   visions
 websocket-client==1.3.3
     # via docker
 wheel==0.37.1
