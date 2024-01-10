@@ -4,8 +4,6 @@
 #
 #    pip-compile requirements.in
 #
-appnope==0.1.3
-    # via ipython
 arrow==1.2.2
     # via jinja2-time
 asttokens==2.0.5
@@ -45,7 +43,9 @@ cookiecutter==2.1.1
 croniter==1.3.5
     # via flytekit
 cryptography==37.0.4
-    # via pyopenssl
+    # via
+    #   pyopenssl
+    #   secretstorage
 cycler==0.11.0
     # via matplotlib
 databricks-cli==0.17.0
@@ -86,7 +86,7 @@ fonttools==4.34.4
     # via matplotlib
 gitdb==4.0.9
     # via gitpython
-gitpython==3.1.27
+gitpython==3.1.41
     # via mlflow-skinny
 googleapis-common-protos==1.56.4
     # via
@@ -114,6 +114,10 @@ ipython==8.4.0
     # via whylogs
 jedi==0.18.1
     # via ipython
+jeepney==0.8.0
+    # via
+    #   keyring
+    #   secretstorage
 jinja2==3.1.2
     # via
     #   cookiecutter
@@ -183,6 +187,7 @@ numpy==1.23.1
     #   pandas-profiling
     #   phik
     #   pyarrow
+    #   pywavelets
     #   scikit-learn
     #   scipy
     #   seaborn
@@ -322,8 +327,11 @@ seaborn==0.11.2
     # via
     #   missingno
     #   pandas-profiling
+secretstorage==3.3.3
+    # via keyring
 six==1.16.0
     # via
+    #   asttokens
     #   databricks-cli
     #   grpcio
     #   imagehash
@@ -369,8 +377,10 @@ urllib3==1.26.11
     #   requests
     #   responses
     #   whylabs-client
-visions[type_image_path]==0.7.4
-    # via pandas-profiling
+visions[type-image-path]==0.7.4
+    # via
+    #   pandas-profiling
+    #   visions
 wcwidth==0.2.5
     # via prompt-toolkit
 websocket-client==1.3.3
